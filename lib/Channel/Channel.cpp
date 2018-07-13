@@ -2,9 +2,6 @@
 #include <Pattern.h>
 #include "Arduino.h"
 
-//#include "D:/code/I2C Test Keypad/lib/Channel.h"
-//#include "D:/code/I2C Test Keypad/lib/Pattern.h"
-
 Channel::Channel()
 {
 
