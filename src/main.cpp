@@ -1,3 +1,14 @@
+/*#include <Arduino.h>
+#include "D:/code/I2C Test Keypad/lib/Sequencer.h"
+#include "D:/code/I2C Test Keypad/lib/Sequencer.cpp"
+#include <Wire.h>
+#include "LedControl.h"
+#include "D:/code/I2C Test Keypad/lib/ControlPanel.h"
+#include "D:/code/I2C Test Keypad/lib/ControlPanel.cpp"
+#include "D:/code/I2C Test Keypad/lib/DisplayPanel.h"
+#include "D:/code/I2C Test Keypad/lib/DisplayPanel.cpp"
+#include "Adafruit_MCP23017.h"*/
+
 #include <Sequencer.h>
 #include <ControlPanel.h>
 #include <DisplayPanel.h>

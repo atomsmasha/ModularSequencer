@@ -4,6 +4,9 @@
 #include <Pattern.h>
 #include "Arduino.h"
 
+// #include "D:/code/I2C Test Keypad/lib/Pattern.h"
+// #include "D:/code/I2C Test Keypad/lib/Pattern.cpp"
+
 #define DEFAULT_PATTERNS 8
 
 class Channel
