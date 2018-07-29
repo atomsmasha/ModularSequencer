@@ -6,9 +6,9 @@
 #define DEFAULT_STEPS 16
 #define DEFAULT_ROWS 2
 #define DEFAULT_COLUMNS 8
+#define TRIGGER_INTERVAL 1
 
-class Pattern
-{
+class Pattern{
   public:
     // VARIABLES
     byte sequence_bytes[2];
@@ -26,6 +26,8 @@ class Pattern
   private:
     // VARIABLES   
     byte _position;
+    byte _triggered_step = 99;
+    long _previous_trigger_millis = 0;
     bool _random;
     // METHODS
     void _resetSequence();

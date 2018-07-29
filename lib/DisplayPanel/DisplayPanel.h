@@ -4,14 +4,12 @@
 #include <Arduino.h>
 #include "LedControl.h"
 
-#define DATAPIN 12
-#define CLKPIN 10
-#define CSPIN 11
+#define DATAPIN 7
+#define CLKPIN 5
+#define CSPIN 6
 #define NUMDEVICES 1
 
-
-class DisplayPanel
-{
+class DisplayPanel{
   public:
 	// METHODS
 	DisplayPanel();
@@ -27,8 +25,7 @@ class DisplayPanel
 	byte _refresh_time = 50;
 	long _previousLEDMillis = 0;
 	bool _pattern_updated = false;
-	byte _display_buffer[8] =
-	{
+	byte _display_buffer[8] ={
     	B00000000,
     	B00000000,
     	B00000000,
@@ -38,17 +35,14 @@ class DisplayPanel
 		B00000000,
 		B00000000,
 	};
-	byte _sequence_buffer[2] = 
-	{
+	byte _sequence_buffer[2] = {
 		B00000000,
 		B00000000,
 	};
-	byte _pattern_buffer[1] = 
-	{
+	byte _pattern_buffer[1] = {
 		B00000000,
 	};
-	byte _channel_buffer[1] = 
-	{
+	byte _channel_buffer[1] = {
 		B00000000,
 	};
 	// METHODS

@@ -2,39 +2,31 @@
 #include <Pattern.h>
 #include "Arduino.h"
 
-Channel::Channel()
-{
-
+Channel::Channel(){
 }
 
-void Channel::init()
-{
+void Channel::init(){
     _init();
 }
 
-void Channel::loadChannel()
-{
+void Channel::loadChannel(){
     // code goes here
 }
 
-void Channel::saveChannel()
-{
+void Channel::saveChannel(){
     // code goes here
 }
 
-void Channel::setActivePattern( byte pattern_selection )
-{
+void Channel::setActivePattern( byte pattern_selection ){
     _active_pattern = pattern_selection;
     return;
 }
 
-byte Channel::getActivePattern()
-{
+byte Channel::getActivePattern(){
     return _active_pattern;
 }
 
-void Channel::updatePatternBytes()
-{
+void Channel::updatePatternBytes(){
     // zero the buffer
     _resetPatternBytes();
     bitWrite(pattern_bytes[0], 7 - this->getActivePattern(), 1);
@@ -44,16 +36,13 @@ void Channel::updatePatternBytes()
 // PRIVATE METHODS
 //
 
-void Channel::_resetPatternBytes()
-{
+void Channel::_resetPatternBytes(){
     pattern_bytes[0] = B00000000;
 }
 
-void Channel::_init()
-{
+void Channel::_init(){
     pattern = new Pattern[DEFAULT_PATTERNS];
-    for(byte i = 0; i < DEFAULT_PATTERNS; i++)
-    {
+    for(byte i = 0; i < DEFAULT_PATTERNS; i++){
         pattern[i].init();
     }
     pattern_bytes[0] = B10000000;

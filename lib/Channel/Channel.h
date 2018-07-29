@@ -6,8 +6,7 @@
 
 #define DEFAULT_PATTERNS 8
 
-class Channel
-{
+class Channel{
   public:
     // VARIABLES
     Pattern* pattern;

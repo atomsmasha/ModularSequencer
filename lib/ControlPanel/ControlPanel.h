@@ -24,8 +24,7 @@
 #define BUTTON_15 65471
 #define BUTTON_16 65407
 
-class ControlPanel
-{
+class ControlPanel{
 	public:
 		// VARIABLES
 		bool button_registered = false;
@@ -41,8 +40,7 @@ class ControlPanel
 		long _debounce_interval = DEFAULT_DEBOUNCE_INTERVAL;
 		long _prev_debounce_millis = 0;
 		uint16_t _last_button_state = MAX_16;
-		int _button_array[16] = 
-		{
+		int _button_array[16] = {
 			BUTTON_1,
 			BUTTON_2,
 			BUTTON_3,

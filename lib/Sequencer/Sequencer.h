@@ -7,8 +7,7 @@
 #define DEFAULT_CHANNELS 4
 #define DEFAULT_FLASH_INTERVAL 50
 
-class Sequencer
-{
+class Sequencer{
   public:
     // VARIABLES
     Channel* channel;
